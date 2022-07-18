@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 2.5em;
+    min-height: 100vh;
+    background: linear-gradient(
+    #b0c3f3,
+    rgba(196, 196, 196,0)
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, Arial, sans-serif;
+    overflow-x: hidden;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clay {
+    background: #fff;
+    text-align: center;
+    width: 33em;
+    padding: 2em 2.5em;
+    border-radius: 4em;
+    box-shadow: inset -0.6em -0.6em 1em #bfd1ff,
+    inset 0.4em 0.4em 0.5em #eff3ff,
+    0.8em 0.8em 2em #839ad7;
+    position: relative;
+}
+
+.clay::before,
+.clay::after {
+    content: '';
+    position: absolute;
+    background: #ffffff;
+    box-shadow: inherit;
+    border-radius: inherit;
+}
+
+.clay::before {
+    width: 10em;
+    height: 4em;
+    top: 70%;
+    left: -13em;
+}
+
+.clay::after {
+    width: 10em;
+    height: 4em;
+    top: 20%;
+    right: -15em;
+}
+
+.clay h1 {
+    color: #132040;
+    margin: 0 0 1.5em 0;
+    font-size: 2.4em;
+}
+
+.clay button {
+    margin: 0 auto 1em auto;
+    border: none;
+    font-size: 1.4em;
+    background: #7ca2ff;
+    padding: 0.8em 1.5em;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0.5em;
+
+    box-shadow: 0 0.5em 1em rgba(47, 107, 255, 0.6),
+    inset 0.1em 0.1em 0.4em #4379ff,
+    inset -0.2em -0.2em 0.8em #004aff;
+
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+
+}
+
+.clay button:hover {
+    box-shadow: none;
+}
+
+.input-wrap {
+    margin-bottom: 0.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5em;
+
+    box-shadow: inset -0.3em -0.3em 0.6em #bfd1ff,
+    inset 0.2em 0.2em 0.3em #eff3ff,
+    0.3em 0.3em 1em
+    rgba(131, 154, 215, 0.8);
+    transition: 0.3s;
+}
+
+input {
+    
+    width: 90%;
+    background: none;
+    border: none;
+    padding: 1em;
+    font-size: 1.1em;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+.icon {
+    padding-left: 1em;
+    color: #132040;
+    font-size: 1.2em;
+}
+
+small {
+    color: #132040;
+}
+
+a {
+    color: #839ad7;
+}
+
+
+
+
+
+
+
+
+
